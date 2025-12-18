@@ -36,12 +36,12 @@ public class BubbleShooterGame extends JPanel implements ActionListener, MouseLi
     
     // Enhanced color palette
     private Color[] bubbleColors = {
-        new Color(255, 87, 87),   // Red
+        new Color(255, 87, 90),   // Red
         new Color(87, 165, 255),  // Blue  
         new Color(87, 255, 87),   // Green
         new Color(255, 215, 87),  // Yellow
         new Color(255, 140, 87),  // Orange
-        new Color(255, 87, 255),  // Pink
+        new Color(255, 87, 245),  // Pink
         new Color(87, 255, 255),  // Cyan
         new Color(200, 87, 255)   // Purple
     };
@@ -242,7 +242,7 @@ public class BubbleShooterGame extends JPanel implements ActionListener, MouseLi
         
         // Border with animation
         float borderAlpha = 0.7f + 0.3f * (float) Math.sin(animationFrame * 0.05);
-        g2d.setColor(new Color(255, 255, 255, (int)(255 * borderAlpha)));
+        g2d.setColor(new Color(254, 255, 255, (int)(255 * borderAlpha)));
         g2d.setStroke(new BasicStroke(2));
         g2d.drawOval(x, y, BUBBLE_SIZE, BUBBLE_SIZE);
     }
